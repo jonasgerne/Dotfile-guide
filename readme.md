@@ -1,6 +1,7 @@
 # Creating Smach Viewer outputs
 ## 1. Step
 ![alt text](Screenshot.png "Logo Title Text 1")
+
 Press the 'Save' button on the right of the toolbar.
 ## 2. Step
 Find your file, it should be saved in:
