@@ -3,18 +3,11 @@ import argparse
 
 
 def filter(filename, filterstring, outputfilename):
-    outlines = []
-
     with open(filename, "r") as f:
         inlines = f.readlines()
 
-    for l in inlines:
-        if filterstring not in l:
-            outlines.append(l)
-
     with open(outputfilename, "w") as f:
-        for l in outlines:
-            f.write(l)
+        [f.write(l) for l in inlines if filterstring not in l]
 
 
 if __name__ == "__main__":
