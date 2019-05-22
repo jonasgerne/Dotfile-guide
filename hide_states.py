@@ -11,7 +11,7 @@ def filter(filename, filterstring, outputfilename):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Hide states from your Smach Viewer.')
+    parser = argparse.ArgumentParser(description='Hide states from your state machine graph (simple way).')
     parser.add_argument('inputfile', type=str, help='the inputfile to process')
     parser.add_argument('outputfile', type=str, help='the filename for the output')
     parser.add_argument('filterstring', type=str, help='the State you want to hide/remove from the dotfile. Enter like "/StateMachine/error"')
